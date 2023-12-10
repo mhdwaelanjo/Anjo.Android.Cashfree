@@ -28,7 +28,7 @@
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 	</PropertyGroup>
 	<ItemGroup>
-	  <None Remove="Jars\core-2.0.7.aar" />
+	  <None Remove="Jars\core-2.0.8.aar" />
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="..\LICENSE.txt">
