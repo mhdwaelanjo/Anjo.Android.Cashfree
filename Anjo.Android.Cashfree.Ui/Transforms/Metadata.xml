@@ -20,11 +20,17 @@
 		  <parameter name="activityState" type="Java.Lang.Object" />
 	  </method>
   </add-node>
-
+ 
   <remove-node path="/api/package[@name='com.cashfree.pg.ui.hidden.dao']/class[@name='NativeCheckoutDAO']" />
   <remove-node path="/api/package[@name='com.cashfree.pg.ui.hidden.checkout.adapter']/class[@name='EMISupportedBankAdapter']" />
  
   <remove-node path="/api/package[@name='com.cashfree.pg.ui.hidden.checkout.subview.savedcards']/class[@name='SavedCardAdapter']" />
 
-
+  <remove-node path="/api/package[@name='com.cashfree.pg.ui.hidden.nfc.parser.apdu.annotation']/class[@name='AnnotationData']/method[@name='compareTo' and count(parameter)=1 and parameter[1][@type='com.cashfree.pg.ui.hidden.nfc.parser.apdu.annotation.AnnotationData']]" />
+  <add-node path="/api/package[@name='com.cashfree.pg.ui.hidden.nfc.parser.apdu.annotation']/class[@name='AnnotationData']">
+	  <method abstract="false" deprecated="not deprecated" final="false" name="CompareTo" native="false" return="int" static="false" synchronized="false" visibility="public">
+		  <parameter name="pO" type="Java.Lang.Object" />
+	  </method>
+  </add-node>
+ 
 </metadata>

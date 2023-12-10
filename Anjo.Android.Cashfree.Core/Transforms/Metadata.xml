@@ -27,4 +27,14 @@
   <remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='ISavedCardsResponseListener']" />
   <remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='ISavedCardsNetworkResponseListener']" />
 
+  <remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='IOrderStatusResponseListener']" />
+  <remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='IOrderStatusNetworkResponseListener']" />
+
+	<remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.nfc.parser.apdu.annotation']/class[@name='AnnotationData']/method[@name='compareTo' and count(parameter)=1 and parameter[1][@type='com.cashfree.pg.core.hidden.nfc.parser.apdu.annotation.AnnotationData']]" />
+  <add-node path="/api/package[@name='com.cashfree.pg.core.hidden.nfc.parser.apdu.annotation']/class[@name='AnnotationData']">
+	  <method abstract="false" deprecated="not deprecated" final="false" name="CompareTo" native="false" return="int" static="false" synchronized="false" visibility="public">
+		  <parameter name="pO" type="Java.Lang.Object" />
+	  </method>
+  </add-node>
+
 </metadata>
