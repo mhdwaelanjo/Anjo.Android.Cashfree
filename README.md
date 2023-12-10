@@ -1,7 +1,7 @@
 # Anjo.Android.Cashfree
 
 ---------------------------------
-Cashfree Android SDK for Xamarin Android Binding Library - Wael Anjo
+Cashfree Android SDK for .NET Android (formerly Xamarin.Android) bindings for AndroidX library - Wael Anjo
 ---------------------------------
 
 Welcome to the Cashfree Payments developer documentation. You will find help about Cashfree Payments products and APIs that will help you start using our products quickly.

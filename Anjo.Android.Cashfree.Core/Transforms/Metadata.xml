@@ -22,4 +22,9 @@
   <remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network.response.models.config.emi']/interface[@name='IEmiInfo']" />
   <remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.base']/class[@name='PaymentRequestObject']" />
 
+  <remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='ISavedCardDeleteNetworkResponseListener']" />
+  <remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='ISavedCardDeleteResponseListener']" />
+  <remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='ISavedCardsResponseListener']" />
+  <remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='ISavedCardsNetworkResponseListener']" />
+
 </metadata>

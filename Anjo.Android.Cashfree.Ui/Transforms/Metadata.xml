@@ -23,6 +23,8 @@
 
   <remove-node path="/api/package[@name='com.cashfree.pg.ui.hidden.dao']/class[@name='NativeCheckoutDAO']" />
   <remove-node path="/api/package[@name='com.cashfree.pg.ui.hidden.checkout.adapter']/class[@name='EMISupportedBankAdapter']" />
+ 
+  <remove-node path="/api/package[@name='com.cashfree.pg.ui.hidden.checkout.subview.savedcards']/class[@name='SavedCardAdapter']" />
 
 
 </metadata>
