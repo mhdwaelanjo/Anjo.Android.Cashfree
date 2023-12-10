@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anjo.Android.Cashfree.Api", "Anjo.Android.Cashfree.Api\Anjo.Android.Cashfree.Api.csproj", "{F4D8A767-1079-4D86-BD04-E835891802F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anjo.Android.Cashfree.Analytics", "Anjo.Android.Cashfree.Analytics\Anjo.Android.Cashfree.Analytics.csproj", "{0414E83D-43C5-4538-9985-3FAD8AD84BAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anjo.Android.Cashfree.Base", "Anjo.Android.Cashfree.Base\Anjo.Android.Cashfree.Base.csproj", "{613DD50C-0438-4D80-87C2-4FFDF17C9D14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anjo.Android.Cashfree.Core", "Anjo.Android.Cashfree.Core\Anjo.Android.Cashfree.Core.csproj", "{9223222F-1C94-4B2A-8BCE-6B74A11F3756}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anjo.Android.Cashfree.ImageCaching", "Anjo.Android.Cashfree.ImageCaching\Anjo.Android.Cashfree.ImageCaching.csproj", "{EA0F4F2B-33DC-4B75-911E-6650531F54E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anjo.Android.Cashfree.Network", "Anjo.Android.Cashfree.Network\Anjo.Android.Cashfree.Network.csproj", "{5E09CD89-3900-4835-9044-A2E90794ADBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anjo.Android.Cashfree.Ui", "Anjo.Android.Cashfree.Ui\Anjo.Android.Cashfree.Ui.csproj", "{76D84947-6471-4E60-8F33-89CB48FD3BFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4D8A767-1079-4D86-BD04-E835891802F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4D8A767-1079-4D86-BD04-E835891802F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4D8A767-1079-4D86-BD04-E835891802F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4D8A767-1079-4D86-BD04-E835891802F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0414E83D-43C5-4538-9985-3FAD8AD84BAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0414E83D-43C5-4538-9985-3FAD8AD84BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0414E83D-43C5-4538-9985-3FAD8AD84BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0414E83D-43C5-4538-9985-3FAD8AD84BAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{613DD50C-0438-4D80-87C2-4FFDF17C9D14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{613DD50C-0438-4D80-87C2-4FFDF17C9D14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{613DD50C-0438-4D80-87C2-4FFDF17C9D14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{613DD50C-0438-4D80-87C2-4FFDF17C9D14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9223222F-1C94-4B2A-8BCE-6B74A11F3756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9223222F-1C94-4B2A-8BCE-6B74A11F3756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9223222F-1C94-4B2A-8BCE-6B74A11F3756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9223222F-1C94-4B2A-8BCE-6B74A11F3756}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA0F4F2B-33DC-4B75-911E-6650531F54E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA0F4F2B-33DC-4B75-911E-6650531F54E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA0F4F2B-33DC-4B75-911E-6650531F54E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA0F4F2B-33DC-4B75-911E-6650531F54E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E09CD89-3900-4835-9044-A2E90794ADBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E09CD89-3900-4835-9044-A2E90794ADBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E09CD89-3900-4835-9044-A2E90794ADBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E09CD89-3900-4835-9044-A2E90794ADBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76D84947-6471-4E60-8F33-89CB48FD3BFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76D84947-6471-4E60-8F33-89CB48FD3BFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76D84947-6471-4E60-8F33-89CB48FD3BFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76D84947-6471-4E60-8F33-89CB48FD3BFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63FB9E37-5E80-437E-A368-C6C486383806}
+	EndGlobalSection
+EndGlobal

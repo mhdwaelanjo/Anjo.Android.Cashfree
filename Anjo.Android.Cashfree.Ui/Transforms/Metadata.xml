@@ -1,0 +1,28 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+  <remove-node path="/api/package[@name='com.cashfree.pg.ui.hidden.activity.base']/class[@name='LifecycleObserverBus']/method[@name='transformResponse' and count(parameter)=1 and parameter[1][@type='com.cashfree.pg.ui.hidden.activity.base.ActivityState']]" />
+  <add-node path="/api/package[@name='com.cashfree.pg.ui.hidden.activity.base']/class[@name='LifecycleObserverBus']">
+	  <method abstract="false" deprecated="not deprecated" final="false" name="transformResponse" native="false" return="Java.Lang.Object" static="false" synchronized="false" visibility="public">
+		  <parameter name="activityState" type="Java.Lang.Object" />
+	  </method>
+  </add-node>
+ 
+  <remove-node path="/api/package[@name='com.cashfree.pg.ui.hidden.channel']/class[@name='CFNativeCallbackEventBus']/method[@name='transformResponse' and count(parameter)=1 and parameter[1][@type='com.cashfree.pg.ui.hidden.channel.CFNativeCallbackEventBus.CFPaymentCallbackEvent']]" />
+  <add-node path="/api/package[@name='com.cashfree.pg.ui.hidden.channel']/class[@name='CFNativeCallbackEventBus']">
+	  <method abstract="false" deprecated="not deprecated" final="false" name="transformResponse" native="false" return="Java.Lang.Object" static="false" synchronized="false" visibility="public">
+		  <parameter name="activityState" type="Java.Lang.Object" />
+	  </method>
+  </add-node>
+
+  <remove-node path="/api/package[@name='com.cashfree.pg.ui.hidden.dao']/class[@name='NativeCheckoutDAO']" />
+  <remove-node path="/api/package[@name='com.cashfree.pg.ui.hidden.checkout.adapter']/class[@name='EMISupportedBankAdapter']" />
+
+
+</metadata>
