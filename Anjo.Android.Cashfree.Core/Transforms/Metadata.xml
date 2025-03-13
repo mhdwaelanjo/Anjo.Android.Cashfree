@@ -1,5 +1,5 @@
 ﻿<metadata>
-  <!--
+	<!--
   This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
   
@@ -7,34 +7,37 @@
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
 
-  <remove-node path="/api/package[@name='com.cashfree.pg.core.api.channel']/class[@name='CFCallbackEventBus']/method[@name='transformResponse' and count(parameter)=1 and parameter[1][@type='com.cashfree.pg.core.api.channel.CFCallbackEventBus.CFPaymentCallbackEvent']]" />
-  <add-node path="/api/package[@name='com.cashfree.pg.core.api.channel']/class[@name='CFCallbackEventBus']">
-	  <method abstract="false" deprecated="not deprecated" final="false" name="transformResponse" native="false" return="Java.Lang.Object" static="false" synchronized="false" visibility="public">
-		  <parameter name="activityState" type="Java.Lang.Object" />
-	  </method>
-  </add-node>
+	<remove-node path="/api/package[@name='com.cashfree.pg.core.api.channel']/class[@name='CFCallbackEventBus']/method[@name='transformResponse' and count(parameter)=1 and parameter[1][@type='com.cashfree.pg.core.api.channel.CFCallbackEventBus.CFPaymentCallbackEvent']]" />
+	<add-node path="/api/package[@name='com.cashfree.pg.core.api.channel']/class[@name='CFCallbackEventBus']">
+		<method abstract="false" deprecated="not deprecated" final="false" name="transformResponse" native="false" return="Java.Lang.Object" static="false" synchronized="false" visibility="public">
+			<parameter name="activityState" type="Java.Lang.Object" />
+		</method>
+	</add-node>
 
-  <remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='IStaticConfigNetworkResponseListener']" />
-  <remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='IConfigResponseListener']" />
-  <remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='IStaticConfigResponseListener']" />
-  <remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='IReconResponseListener']" />
+	<remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='IStaticConfigNetworkResponseListener']" />
+	<remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='IConfigResponseListener']" />
+	<remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='IStaticConfigResponseListener']" />
+	<remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='IReconResponseListener']" />
 
-  <remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network.response.models.config.emi']/interface[@name='IEmiInfo']" />
-  <remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.base']/class[@name='PaymentRequestObject']" />
+	<remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network.response.models.config.emi']/interface[@name='IEmiInfo']" />
+	<remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.base']/class[@name='PaymentRequestObject']" />
 
-  <remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='ISavedCardDeleteNetworkResponseListener']" />
-  <remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='ISavedCardDeleteResponseListener']" />
-  <remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='ISavedCardsResponseListener']" />
-  <remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='ISavedCardsNetworkResponseListener']" />
+	<remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='ISavedCardDeleteNetworkResponseListener']" />
+	<remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='ISavedCardDeleteResponseListener']" />
+	<remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='ISavedCardsResponseListener']" />
+	<remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='ISavedCardsNetworkResponseListener']" />
 
-  <remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='IOrderStatusResponseListener']" />
-  <remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='IOrderStatusNetworkResponseListener']" />
+	<remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='IOrderStatusResponseListener']" />
+	<remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='IOrderStatusNetworkResponseListener']" />
 
 	<remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.nfc.parser.apdu.annotation']/class[@name='AnnotationData']/method[@name='compareTo' and count(parameter)=1 and parameter[1][@type='com.cashfree.pg.core.hidden.nfc.parser.apdu.annotation.AnnotationData']]" />
-  <add-node path="/api/package[@name='com.cashfree.pg.core.hidden.nfc.parser.apdu.annotation']/class[@name='AnnotationData']">
-	  <method abstract="false" deprecated="not deprecated" final="false" name="CompareTo" native="false" return="int" static="false" synchronized="false" visibility="public">
-		  <parameter name="pO" type="Java.Lang.Object" />
-	  </method>
-  </add-node>
+	<add-node path="/api/package[@name='com.cashfree.pg.core.hidden.nfc.parser.apdu.annotation']/class[@name='AnnotationData']">
+		<method abstract="false" deprecated="not deprecated" final="false" name="CompareTo" native="false" return="int" static="false" synchronized="false" visibility="public">
+			<parameter name="pO" type="Java.Lang.Object" />
+		</method>
+	</add-node>
+
+	<attr name="argsType" path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='IConfigNetworkResponseListener']/method[@name='onFailure' and count(parameter)=1 and parameter[1][@type='com.cashfree.pg.core.api.utils.CFErrorResponse']]">OnFailureConfigNetworkResponseEventArgs</attr>
+	<attr name="argsType" path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='IConfigNetworkResponseListener']/method[@name='onSuccess' and count(parameter)=1 and parameter[1][@type='java.lang.String']]">OnSuccessConfigNetworkResponseEventArgs</attr>
 
 </metadata>
