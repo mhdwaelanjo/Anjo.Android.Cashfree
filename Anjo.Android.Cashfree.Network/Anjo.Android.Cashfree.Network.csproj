@@ -1,24 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFrameworks>net8.0-android;net7.0-android;</TargetFrameworks>
+		<TargetFrameworks>net9.0-android;net8.0-android;</TargetFrameworks>
 		<SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 	</PropertyGroup>
 	<PropertyGroup>
 		<PackageId>Anjo.Android.Cashfree.Network</PackageId>
-		<PackageVersion>1.0.6</PackageVersion>
-		<AssemblyVersion>1.0.6</AssemblyVersion>
-		<FileVersion>1.0.5</FileVersion>
-		<Version>1.0.6.2</Version>
-		<Title>Anjo Android Cashfree SDK</Title>
+		<PackageVersion>1.0.6.1</PackageVersion>
+		<AssemblyVersion>1.0.6.1</AssemblyVersion>
+		<FileVersion>1.0.6.1</FileVersion>
+		<Version>1.0.6.1</Version>
+		<Title>Anjo Android Cashfree Network SDK</Title>
 		<Authors>Wael Anjo</Authors>
 		<Owners>Wael Anjo</Owners>
 		<PackageProjectUrl>https://github.com/mhdwaelanjo/Anjo.Android.Cashfree</PackageProjectUrl>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 		<Description>.NET for Android (formerly Xamarin.Android) Binding Library - Cashfree Network</Description>
 		<PackageReleaseNotes>Cashfree.Network SDK v1.0.6</PackageReleaseNotes>
-		<Copyright>Copyright (c) 2024 Wael Anjo</Copyright>
+		<Copyright>Copyright (c) 2025 Wael Anjo</Copyright>
 		<PackageTags>Xamarin.Android, NET MAUI, MonoDroid, Cashfree, payment-gateway, payment-integration, global payments, Upi</PackageTags>
 		<Summary>With Cashfree Payments, collect payments, make payouts, manage international payments and more.</Summary>
 		<!-- Include symbol files (*.pdb) in the built .nupkg -->
@@ -46,7 +46,7 @@
 		</None>
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.6.1.6" />
+		<PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.7.0.5" />
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\Anjo.Android.Cashfree.Base\Anjo.Android.Cashfree.Base.csproj" />

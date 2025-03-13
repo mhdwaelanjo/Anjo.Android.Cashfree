@@ -13,6 +13,20 @@
 			<parameter name="activityState" type="Java.Lang.Object" />
 		</method>
 	</add-node>
+	
+	<remove-node path="/api/package[@name='com.cashfree.pg.core.api.channel']/class[@name='CFCallbackApiEventBus']/method[@name='transformResponse' and count(parameter)=1 and parameter[1][@type='com.cashfree.pg.core.api.channel.CFCallbackApiEventBus.CFPaymentCallbackEvent']]" />
+	<add-node path="/api/package[@name='com.cashfree.pg.core.api.channel']/class[@name='CFCallbackApiEventBus']">
+		<method abstract="false" deprecated="not deprecated" final="false" name="transformResponse" native="false" return="Java.Lang.Object" static="false" synchronized="false" visibility="public">
+			<parameter name="activityState" type="Java.Lang.Object" />
+		</method>
+	</add-node>
+
+	<remove-node path="/api/package[@name='com.cashfree.pg.core.api.channel']/class[@name='CFSubscriptionEventBus']/method[@name='transformResponse' and count(parameter)=1 and parameter[1][@type='com.cashfree.pg.core.api.channel.CFSubscriptionEventBus.CFPaymentCallbackEvent']]" />
+	<add-node path="/api/package[@name='com.cashfree.pg.core.api.channel']/class[@name='CFSubscriptionEventBus']">
+		<method abstract="false" deprecated="not deprecated" final="false" name="transformResponse" native="false" return="Java.Lang.Object" static="false" synchronized="false" visibility="public">
+			<parameter name="activityState" type="Java.Lang.Object" />
+		</method>
+	</add-node>
 
 	<remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='IStaticConfigNetworkResponseListener']" />
 	<remove-node path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='IConfigResponseListener']" />
@@ -39,5 +53,7 @@
 
 	<attr name="argsType" path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='IConfigNetworkResponseListener']/method[@name='onFailure' and count(parameter)=1 and parameter[1][@type='com.cashfree.pg.core.api.utils.CFErrorResponse']]">OnFailureConfigNetworkResponseEventArgs</attr>
 	<attr name="argsType" path="/api/package[@name='com.cashfree.pg.core.hidden.network']/interface[@name='IConfigNetworkResponseListener']/method[@name='onSuccess' and count(parameter)=1 and parameter[1][@type='java.lang.String']]">OnSuccessConfigNetworkResponseEventArgs</attr>
+
+	<remove-node path="/api/package[@name='com.cashfree.pg.core.api.channel']/class[@name='CFSubscriptionEventBus']" />
 
 </metadata>

@@ -1,24 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFrameworks>net8.0-android;net7.0-android;</TargetFrameworks>
+		<TargetFrameworks>net9.0-android;net8.0-android;</TargetFrameworks>
 		<SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 	</PropertyGroup>
 	<PropertyGroup>
 		<PackageId>Anjo.Android.Cashfree.Core</PackageId>
-		<PackageVersion>2.1.18</PackageVersion>
-		<AssemblyVersion>2.1.18</AssemblyVersion>
-		<FileVersion>2.1.18</FileVersion>
-		<Version>2.1.18</Version>
-		<Title>Anjo Android Cashfree SDK</Title>
+		<PackageVersion>2.1.27</PackageVersion>
+		<AssemblyVersion>2.1.27</AssemblyVersion>
+		<FileVersion>2.1.27</FileVersion>
+		<Version>2.1.27</Version>
+		<Title>Anjo Android Cashfree Core SDK</Title>
 		<Authors>Wael Anjo</Authors>
 		<Owners>Wael Anjo</Owners>
 		<PackageProjectUrl>https://github.com/mhdwaelanjo/Anjo.Android.Cashfree</PackageProjectUrl>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 		<Description>.NET for Android (formerly Xamarin.Android) Binding Library - Cashfree Core</Description>
-		<PackageReleaseNotes>Cashfree.Core SDK v2.1.18</PackageReleaseNotes>
-		<Copyright>Copyright (c) 2024 Wael Anjo</Copyright>
+		<PackageReleaseNotes>Cashfree.Core SDK v2.1.27</PackageReleaseNotes>
+		<Copyright>Copyright (c) 2025 Wael Anjo</Copyright>
 		<PackageTags>Xamarin.Android, NET MAUI, MonoDroid, Cashfree, payment-gateway, payment-integration, global payments, Upi</PackageTags>
 		<Summary>With Cashfree Payments, collect payments, make payouts, manage international payments and more.</Summary>
 		<!-- Include symbol files (*.pdb) in the built .nupkg -->
@@ -29,7 +29,7 @@
 		<PackageIcon>icon.png</PackageIcon>
 	</PropertyGroup>
 	<ItemGroup>
-	  <None Remove="Jars\core-2.1.18.aar" />
+	  <None Remove="Jars\core-2.1.27.aar" />
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="..\icon.png">
@@ -46,9 +46,9 @@
 		</None>
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Xamarin.Google.Android.Play.Integrity" Version="1.2.0.2" />
-		<PackageReference Include="Xamarin.GooglePlayServices.Auth" Version="120.7.0.1" />
-		<PackageReference Include="Xamarin.GooglePlayServices.Auth.Api.Phone" Version="118.0.1.7" />
+		<PackageReference Include="Xamarin.Google.Android.Play.Integrity" Version="1.4.0.3" />
+		<PackageReference Include="Xamarin.GooglePlayServices.Auth" Version="121.3.0.1" />
+		<PackageReference Include="Xamarin.GooglePlayServices.Auth.Api.Phone" Version="118.1.0.4" />
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\Anjo.Android.Cashfree.Analytics\Anjo.Android.Cashfree.Analytics.csproj" />
